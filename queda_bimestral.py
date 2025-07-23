@@ -13,7 +13,7 @@ queda = False
 
 for medias in range(1,6):
     
-    if int(bimestres[medias]) < int(bimestres[medias - 1]):
+    if bimestres[medias] < bimestres[medias - 1]:
         print(medias + 1)
         queda = True
 if queda == False:
