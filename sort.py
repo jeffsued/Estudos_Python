@@ -10,5 +10,4 @@ def main():
     lista = [5, 2, 20, 70, 1, 3, 7]
     ordenada = insertion_sort(lista)
     print(ordenada)
-if __name__ == "__main__":    
-    main()
+main()
