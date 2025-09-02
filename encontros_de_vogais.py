@@ -1,30 +1,23 @@
-def my_in(elem, sequencia):
-    for i in sequencia:
-        if i == elem:
-            return True
-    return False
-
-def encontros_vogais(p):
+def encontros_vogais(palavra):
     vogais = 'aeiouAEIOU'
-    for i in range(len(p)-1):
-        if my_in(p[i], vogais) and my_in(p[i+1], vogais):
+    for i in range(len(palavra)-1):
+        if palavra[i] in vogais and palavra[i+1] in vogais:
             return True
     return False
 
 def main():
     com = 0
 
-    n = int(input())
+    quantidade_de_palavras = int(input())
     palavras = []
-    for i in range(n):
-        pal = input()
-        palavras.append(pal)
+    for i in range(quantidade_de_palavras):
+        palavras.append(input())
 
-    for p in palavras:
-        if encontros_vogais(p):
+    for palavra in palavras:
+        if encontros_vogais(palavra):
             com += 1
     
     print('com:', com)
-    print('sem:', n - com)
+    print('sem:', quantidade_de_palavras - com)
 
 main()
