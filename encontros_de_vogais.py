@@ -17,7 +17,7 @@ def main():
         if encontros_vogais(palavra):
             com += 1
     
-    print('com:', com)
-    print('sem:', quantidade_de_palavras - com)
+    print('com encontros vocalicos:', com)
+    print('sem sem encontros vocalicos:', quantidade_de_palavras - com)
 
 main()
